@@ -10,8 +10,7 @@ export type NoteName =
   | "G#"
   | "A"
   | "A#"
-  | "B"
-  | "B#";
+  | "B";
 export enum ScaleType {
   Major,
   Minor,
@@ -31,6 +30,7 @@ export const ALL_NOTES: NoteName[] = [
   "A#",
   "B",
 ];
+export const C_MAJOR_NOTES: NoteName[] = ["C", "D", "E", "F", "G", "A", "B"];
 
 export class Note {
   public noteIndex: number;
@@ -50,5 +50,13 @@ export class Note {
 
   public getLowerNote() {
     return this.getNoteBySemitones(-1);
+  }
+
+  public getIntervalFrom(other: Note) {
+    const pureName1 = this.name.split("")[0];
+    const pureName2 = other.name.split("")[0];
+    const index1 = C_MAJOR_NOTES.findIndex((note) => note === pureName1);
+    const index2 = C_MAJOR_NOTES.findIndex((note) => note === pureName2);
+    return Math.abs(index1 - index2) + 1;
   }
 }

@@ -1,4 +1,4 @@
-import { Note } from "../libs/core";
+import { Note } from "../libs/Note";
 
 describe("Note", () => {
   test("getNoteBySemitones", () => {

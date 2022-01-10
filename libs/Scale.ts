@@ -1,5 +1,6 @@
 import { NotImplementedError } from "../utils/error";
-import { Note, NoteName } from "./core";
+import { NoteName } from "./constant";
+import { Note } from "./Note";
 
 export enum ScaleType {
   Major,

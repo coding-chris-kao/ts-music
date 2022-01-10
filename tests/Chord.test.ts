@@ -1,5 +1,5 @@
 import { Chord, ChordFactory } from "../libs/Chord";
-import { NoteName } from "../libs/core";
+import { NoteName } from "../libs/constant";
 import { ScaleType } from "../libs/Scale";
 
 describe("ChordFactory", () => {

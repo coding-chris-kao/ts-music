@@ -1,5 +1,6 @@
 import { ChordFactory } from "./libs/Chord";
-import { NoteName, ScaleType } from "./libs/core";
+import { NoteName } from "./libs/constant";
+import { ScaleType } from "./libs/Scale";
 
 const key: NoteName = "B";
 const factory = new ChordFactory();

@@ -1,4 +1,5 @@
-import { Note, NoteName } from "./core";
+import { NoteName } from "./constant";
+import { Note } from "./Note";
 import { ScaleFactory, ScaleType } from "./Scale";
 
 export enum ChordType {

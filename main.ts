@@ -2,9 +2,9 @@ import { ChordFactory } from "./libs/Chord";
 import { NoteName } from "./libs/constant";
 import { ScaleType } from "./libs/Scale";
 
-const key: NoteName = "B";
+const key: NoteName = "C";
 const factory = new ChordFactory();
-const chords = factory.getDiatonicChords(key, ScaleType.Major);
+const chords = factory.getDiatonicSeventhChords(key, ScaleType.Minor);
 
 for (const chord of chords) {
   console.log(chord.toString());

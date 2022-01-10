@@ -1,15 +1,20 @@
 export type NoteName =
   | "C"
   | "C#"
+  | "Db"
   | "D"
   | "D#"
+  | "Eb"
   | "E"
   | "F"
   | "F#"
+  | "Gb"
   | "G"
   | "G#"
+  | "Ab"
   | "A"
   | "A#"
+  | "Bb"
   | "B";
 
 export const CHROMATIC_SCALE_NOTES: NoteName[] = [

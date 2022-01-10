@@ -41,11 +41,19 @@ export class Note {
     return this.getNoteBySemitones(7);
   }
 
+  public get augmentedFifth(): Note {
+    return this.getNoteBySemitones(8);
+  }
+
   public get minorSixth(): Note {
     return this.getNoteBySemitones(8);
   }
 
   public get majorSixth(): Note {
+    return this.getNoteBySemitones(9);
+  }
+
+  public get diminishedSeventh(): Note {
     return this.getNoteBySemitones(9);
   }
 
@@ -59,6 +67,14 @@ export class Note {
 
   public get perfectOctave(): Note {
     return this.getNoteBySemitones(12);
+  }
+
+  public get minorNinth(): Note {
+    return this.getNoteBySemitones(13);
+  }
+
+  public get majorNinth(): Note {
+    return this.getNoteBySemitones(14);
   }
 
   public getNoteBySemitones(num: number) {

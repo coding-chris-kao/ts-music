@@ -181,7 +181,7 @@ export class Chord {
       case ChordType.DiminishedSeventh:
         return this.name + "dim7";
       case ChordType.HalfDiminishedSeventh:
-        return this.name + "m7b5";
+        return this.name + "ø7";
       default:
         return this.name;
     }
@@ -231,7 +231,7 @@ export class ChordFactory {
       case ScaleType.Aeolian:
         return [
           new Chord(scale.tonic.name, ChordType.MinorSeventh),
-          new Chord(scale.superTonic.name, ChordType.DiminishedSeventh),
+          new Chord(scale.superTonic.name, ChordType.HalfDiminishedSeventh),
           new Chord(scale.mediant.name, ChordType.MajorSeventh),
           new Chord(scale.subdominant.name, ChordType.MinorSeventh),
           new Chord(scale.dominant.name, ChordType.MinorSeventh),

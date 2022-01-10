@@ -1,8 +1,4 @@
-import {
-  NoteName,
-  CHROMATIC_SCALE_NOTES,
-  C_MAJOR_SCALE_NOTES,
-} from "./constant";
+import { CHROMATIC_SCALE_NOTES, C_MAJOR_SCALE_NOTES } from "./constant";
 import { DegreeRing } from "./DegreeRing";
 
 export class Note {
@@ -17,7 +13,7 @@ export class Note {
       );
   }
 
-  constructor(public name: NoteName) {
+  constructor(public name: string) {
     Note.verifyNoteName(name);
     this.noteIndex = CHROMATIC_SCALE_NOTES.findIndex(
       (note) => note === this.name

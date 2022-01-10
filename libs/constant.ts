@@ -1,24 +1,4 @@
-export type NoteName =
-  | "C"
-  | "C#"
-  | "Db"
-  | "D"
-  | "D#"
-  | "Eb"
-  | "E"
-  | "F"
-  | "F#"
-  | "Gb"
-  | "G"
-  | "G#"
-  | "Ab"
-  | "A"
-  | "A#"
-  | "Bb"
-  | "B"
-  | string;
-
-export const CHROMATIC_SCALE_NOTES: NoteName[] = [
+export const CHROMATIC_SCALE_NOTES = [
   "C",
   "C#",
   "D",
@@ -33,12 +13,4 @@ export const CHROMATIC_SCALE_NOTES: NoteName[] = [
   "B",
 ];
 
-export const C_MAJOR_SCALE_NOTES: NoteName[] = [
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "A",
-  "B",
-];
+export const C_MAJOR_SCALE_NOTES = ["C", "D", "E", "F", "G", "A", "B"];

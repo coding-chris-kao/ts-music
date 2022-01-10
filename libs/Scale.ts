@@ -1,5 +1,4 @@
 import { NotImplementedError } from "../utils/error";
-import { NoteName } from "./constant";
 import { Note } from "./Note";
 
 export enum ScaleType {
@@ -18,7 +17,7 @@ export enum ScaleType {
 export abstract class Scale {
   public tonic: Note;
 
-  constructor(public tonicName: NoteName) {
+  constructor(public tonicName: string) {
     this.tonic = new Note(tonicName);
   }
 
@@ -285,7 +284,7 @@ export class LocrianScale extends Scale {
 }
 
 export class ScaleFactory {
-  public getScale(tonicName: NoteName, type: ScaleType) {
+  public getScale(tonicName: string, type: ScaleType) {
     switch (type) {
       case ScaleType.Minor:
       case ScaleType.Aeolian:

@@ -1,8 +1,7 @@
 import { ChordFactory } from "./libs/Chord";
-import { NoteName } from "./libs/constant";
 import { ScaleType } from "./libs/Scale";
 
-const key: NoteName = "C";
+const key: string = "C";
 const factory = new ChordFactory();
 const chords = factory.getDiatonicSeventhChords(key, ScaleType.Minor);
 

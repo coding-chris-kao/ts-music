@@ -1,4 +1,3 @@
-import { NoteName } from "./constant";
 import { Note } from "./Note";
 import { ScaleFactory, ScaleType } from "./Scale";
 
@@ -25,7 +24,7 @@ export enum ChordType {
 export class Chord {
   public assemblies: Note[];
 
-  constructor(public name: NoteName, public chordType: ChordType) {
+  constructor(public name: string, public chordType: ChordType) {
     const tonic = new Note(name);
     switch (chordType) {
       // Triad
@@ -192,7 +191,7 @@ export class Chord {
 export class ChordFactory {
   private scaleFactory = new ScaleFactory();
 
-  public getDiatonicChords(key: NoteName, scaleType: ScaleType) {
+  public getDiatonicChords(key: string, scaleType: ScaleType) {
     const scale = this.scaleFactory.getScale(key, scaleType);
 
     switch (scaleType) {
@@ -224,7 +223,7 @@ export class ChordFactory {
     }
   }
 
-  public getDiatonicSeventhChords(key: NoteName, scaleType: ScaleType) {
+  public getDiatonicSeventhChords(key: string, scaleType: ScaleType) {
     const scale = this.scaleFactory.getScale(key, scaleType);
 
     switch (scaleType) {

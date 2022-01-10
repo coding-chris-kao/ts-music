@@ -59,26 +59,26 @@ export class MajorScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(2);
+        note = this.tonic.transferToDegree(2, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(4);
+        note = this.tonic.transferToDegree(4, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(5);
+        note = this.tonic.transferToDegree(5, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(7);
+        note = this.tonic.transferToDegree(7, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(9);
+        note = this.tonic.transferToDegree(9, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(11);
+        note = this.tonic.transferToDegree(11, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 
@@ -92,26 +92,26 @@ export class MinorScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(2);
+        note = this.tonic.transferToDegree(2, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(3);
+        note = this.tonic.transferToDegree(3, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(5);
+        note = this.tonic.transferToDegree(5, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(7);
+        note = this.tonic.transferToDegree(7, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(8);
+        note = this.tonic.transferToDegree(8, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(10);
+        note = this.tonic.transferToDegree(10, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 
@@ -125,26 +125,26 @@ export class DorianScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(2);
+        note = this.tonic.transferToDegree(2, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(3);
+        note = this.tonic.transferToDegree(3, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(5);
+        note = this.tonic.transferToDegree(5, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(7);
+        note = this.tonic.transferToDegree(7, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(9);
+        note = this.tonic.transferToDegree(9, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(10);
+        note = this.tonic.transferToDegree(10, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 
@@ -158,26 +158,26 @@ export class PhrygianScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(1);
+        note = this.tonic.transferToDegree(1, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(3);
+        note = this.tonic.transferToDegree(3, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(5);
+        note = this.tonic.transferToDegree(5, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(7);
+        note = this.tonic.transferToDegree(7, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(8);
+        note = this.tonic.transferToDegree(8, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(10);
+        note = this.tonic.transferToDegree(10, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 
@@ -191,26 +191,26 @@ export class LydianScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(2);
+        note = this.tonic.transferToDegree(2, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(4);
+        note = this.tonic.transferToDegree(4, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(6);
+        note = this.tonic.transferToDegree(6, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(7);
+        note = this.tonic.transferToDegree(7, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(9);
+        note = this.tonic.transferToDegree(9, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(11);
+        note = this.tonic.transferToDegree(11, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 
@@ -224,26 +224,26 @@ export class MixolydianScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(2);
+        note = this.tonic.transferToDegree(2, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(4);
+        note = this.tonic.transferToDegree(4, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(5);
+        note = this.tonic.transferToDegree(5, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(7);
+        note = this.tonic.transferToDegree(7, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(9);
+        note = this.tonic.transferToDegree(9, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(10);
+        note = this.tonic.transferToDegree(10, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 
@@ -257,26 +257,26 @@ export class LocrianScale extends Scale {
     let note: Note;
     switch (degree) {
       case 2:
-        note = this.tonic.getNoteBySemitones(1);
+        note = this.tonic.transferToDegree(1, degree);
         break;
       case 3:
-        note = this.tonic.getNoteBySemitones(3);
+        note = this.tonic.transferToDegree(3, degree);
         break;
       case 4:
-        note = this.tonic.getNoteBySemitones(5);
+        note = this.tonic.transferToDegree(5, degree);
         break;
       case 5:
-        note = this.tonic.getNoteBySemitones(6);
+        note = this.tonic.transferToDegree(6, degree);
         break;
       case 6:
-        note = this.tonic.getNoteBySemitones(8);
+        note = this.tonic.transferToDegree(8, degree);
         break;
       case 7:
-        note = this.tonic.getNoteBySemitones(10);
+        note = this.tonic.transferToDegree(10, degree);
         break;
       case 1:
       default:
-        note = this.tonic.getNoteBySemitones(0);
+        note = this.tonic.transferToDegree(0, degree);
         break;
     }
 

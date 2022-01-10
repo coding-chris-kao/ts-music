@@ -15,7 +15,8 @@ export type NoteName =
   | "A"
   | "A#"
   | "Bb"
-  | "B";
+  | "B"
+  | string;
 
 export const CHROMATIC_SCALE_NOTES: NoteName[] = [
   "C",
